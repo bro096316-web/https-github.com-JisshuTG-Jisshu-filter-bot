@@ -41,8 +41,8 @@ CHANNELS = [
 AUTH_CHANNEL = int(environ.get("AUTH_CHANNEL", "-1002520793005"))
 AUTH_REQ_CHANNEL = int(environ.get("AUTH_REQ_CHANNEL", "-1002520793005"))
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002552925944"))
-LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", ""))
-LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", ""))
+LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", "-1002552925944"))
+LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", "-https://t.me/+pVngOMgFHIZhNTE1"))
 
 # MongoDB
 DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://ABHI:ABHI@cluster0.h1ewpln.mongodb.net/?appName=Cluster0")
@@ -55,7 +55,7 @@ COLLECTION_NAME = environ.get("COLLECTION_NAME", "Pushpa77")
 # Other Channel's
 SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1002520793005"))
 DELETE_CHANNELS = int(environ.get("DELETE_CHANNELS", "0"))
-request_channel = environ.get("REQUEST_CHANNEL", "--1002520793005")
+request_channel = environ.get("REQUEST_CHANNEL", "-1002520793005")
 REQUEST_CHANNEL = (
     int(request_channel)
     if request_channel and id_pattern.search(request_channel)
